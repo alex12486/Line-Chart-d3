@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Line Chart</title>
+</head>
+<meta charset="utf-8">
+<style>
+
+	body {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		overflow: hidden;
+		user-select: none;
+	}
+
+	.arc text {
+		font: 10px sans-serif;
+		text-anchor: middle;
+	}
+
+	.arc path {
+		stroke: #fff;
+		transition: 0.3s all ease-in-out;
+	}
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: black;
+		shape-rendering: crispEdges;
+	}
+
+	.axis--x path {
+		display: none;
+	}
+
+	.axis text {
+		font-family: sans-serif;
+		font-size: 11px;
+	}
+	
+	.diagram {
+		text-align: center;
+	}
+
+	.line {
+		fill: none;
+		stroke-width: 1.5px;
+		transition: opacity 0.3s ease-in-out
+	}
+
+	h2 {
+		font-family: sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+</style>
+<body>
+
+
+	
+	<div class="diagram">
+		<h2>Daily average temperatures of New York, San Francisco and Austin over 2011-2012</h2>
+	</div>
+
+
+	<script src="//d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/d3-axis.v1.min.js"></script>
+	<script src="myLineChart.js"></script>
+</body>
+</html>
+
+
+
